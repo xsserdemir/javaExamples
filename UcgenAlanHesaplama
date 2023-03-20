@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class UcgenAlanHesaplama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Lütfen birinci kenarın uzunluğunu girin: ");
+        double kenar1 = input.nextDouble();
+
+        System.out.print("Lütfen ikinci kenarın uzunluğunu girin: ");
+        double kenar2 = input.nextDouble();
+
+        System.out.print("Lütfen üçüncü kenarın uzunluğunu girin: ");
+        double kenar3 = input.nextDouble();
+
+        double u = (kenar1 + kenar2 + kenar3) / 2;
+        double alan = Math.sqrt(u * (u - kenar1) * (u - kenar2) * (u - kenar3));
+
+        System.out.println("Üçgenin Alanı: " + alan);
+    }
+}
