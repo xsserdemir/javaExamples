@@ -1,0 +1,2 @@
+# javaExamples
+PatikaDev ödevleri.
