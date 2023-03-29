@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class ortalamaHesaplama {
+    public static void main(String[] args) {
+        int mat, fizik, turkce, kimya, muzik;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Matematik Notunuzu Girin :  ");
+        mat = input.nextInt();
+
+        System.out.println("Türkçe Notunuzu Giriniz : ");
+        turkce = input.nextInt();
+
+        System.out.println("Fizik Notunuzu Giriniz : ");
+        fizik   = input.nextInt();
+
+        System.out.println("Kimya Notunuzu Giriniz : ");
+        kimya   = input.nextInt();
+
+        System.out.println("Müzik Notunuzu Giriniz : ");
+        muzik = input.nextInt();
+
+        double avarage = (mat + fizik + turkce + kimya + muzik) / 5;
+        if ((0 <= mat && mat <= 100) && (0 <= fizik && fizik <= 100) && (0 <= turkce && turkce <= 100) &&
+                (0 <= kimya && kimya <= 100) && (0 <= muzik && muzik <= 100))
+        {
+            if (avarage <= 55){
+                System.out.println("Sınıfta Kaldınız!!!");
+                System.out.println("Ortalamanız : " + avarage +"55 üstünde olmalıydı!");
+            } else {
+                System.out.println("Tebrikler, Sınıfı geçtiniz.");
+                System.out.println("Ortalamanız : "+ avarage);
+            }
+        }else {
+                System.out.print(" Ders notunuz 1-100 arası değer olmalı!!!");
+        }
+
+    }
+}
