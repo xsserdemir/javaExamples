@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Dongu_Ilk {
+public class tamBolunen {
     public static void main(String[] args) {
         int a, b = 0;
         Scanner input = new Scanner(System.in);
